@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:gravity="center_vertical">
+	<!--标题栏左侧的TextView控件，用于显示程序名称  -->
+	<TextView android:id="@+id/title_left_text"
+		android:layout_alignParentLeft="true" android:ellipsize="end"
+		android:singleLine="true" style="?android:attr/windowTitleStyle"
+		android:layout_width="wrap_content" android:layout_height="match_parent"
+		android:layout_weight="1" />
+	<!--标题栏右侧的TextView控件，用于显示蓝牙设备的当前状态 -->
+	<TextView android:id="@+id/title_right_text"
+		android:layout_alignParentRight="true" android:ellipsize="end"
+		android:singleLine="true" android:layout_width="wrap_content"
+		android:layout_height="match_parent" android:textColor="#fff"
+		android:layout_weight="1" />
+</RelativeLayout>
